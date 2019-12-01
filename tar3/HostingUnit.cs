@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace tar3
 {
-    class HostingUnit
+   public class HostingUnit
     {
         private string UnitName;
         private int Rooms;

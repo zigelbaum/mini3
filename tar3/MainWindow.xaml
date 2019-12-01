@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
         <Grid Name="UpGrid" HorizontalAlignment="Stretch" Height="auto" Margin="111,10,0,0" Grid.Row="0"  VerticalAlignment="Stretch" Width="auto"/>
         <TextBox x:Name="tbHostName" Height="38" TextWrapping="Wrap" Text="{Binding Path=HostName}" Width="386" Grid.Column="1" FontFamily="Ravie" FontSize="18"/>
-        <ComboBox x:Name="cbHostList" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="396" Height="38"/>
+        <ComboBox x:Name="cbHostList" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="396" Height="38" SelectionChanged="cbHostList_SelectionChanged"/>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
