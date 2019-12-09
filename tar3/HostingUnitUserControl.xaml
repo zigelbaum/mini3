@@ -1,6 +1,4 @@
-﻿
-    
-    <UserControl x:Name="___No_Name_" x:Class="tar3.HostingUnitUserControl"
+﻿<UserControl x:Name="___No_Name_" x:Class="tar3.HostingUnitUserControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -14,11 +12,11 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="tbUnitName" HorizontalAlignment="Left" Height="42" Margin="31,22,0,0" TextWrapping="Wrap" Text="{Binding Path=UnitName}" VerticalAlignment="Top" Width="189"/>
+        <TextBox x:Name="tbUnitName" HorizontalAlignment="Left" Height="42" Margin="31,10,0,0" TextWrapping="Wrap" Text="{Binding Path=UnitName}" VerticalAlignment="Top" Width="189"/>
         <Label Content="מספר חדרים" HorizontalAlignment="Left" Margin="120,92,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="tbRooms" HorizontalAlignment="Left" Height="31" Margin="31,92,0,0" TextWrapping="Wrap" Text="{Binding Path=Rooms}" VerticalAlignment="Top" Width="46"/>
         <CheckBox x:Name="IsSwimmingPool" Content="בריכה" Margin="31,140,0,0" VerticalAlignment="Top" Height="50" Width="189" IsChecked="{Binding Path=IsSwimmingPool}" HorizontalAlignment="Left"/>
-        <Viewbox x:Name="vbCalendar" Grid.Column="1" HorizontalAlignment="Left" Height="125" Margin="21,22,0,0" VerticalAlignment="Top" Width="225" Stretch="Fill"/>
+        <Viewbox x:Name="vbCalendar" Grid.Column="1" HorizontalAlignment="Left" Height="160" Margin="21,0,0,0" VerticalAlignment="Top" Width="225" Stretch="Fill"/>
         <Button x:Name="btOrder" Content="הזמן" Grid.Column="1" HorizontalAlignment="Left" Margin="21,165,0,0" VerticalAlignment="Top" Width="225" Click="btOrder_Click"/>
     </Grid>
 

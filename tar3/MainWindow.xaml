@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tar3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="640" Width="800">
+        Title="zimers" Height="640" Width="800" Background="#FFD7FDFF" Icon="Flower.ico">
     <Grid Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="40*"/>
@@ -13,12 +13,13 @@
             <RowDefinition Height="200*"/>
             <RowDefinition Height="200*"/>
         </Grid.RowDefinitions>
-        <Grid Name="UpGrid" HorizontalAlignment="Stretch" Height="auto" Margin="111,10,0,0" Grid.Row="0"  VerticalAlignment="Stretch" Width="auto"/>
-        <TextBox x:Name="tbHostName" Height="38" TextWrapping="Wrap" Text="{Binding Path=HostName}" Width="386" Grid.Column="1" FontFamily="Ravie" FontSize="18"/>
-        <ComboBox x:Name="cbHostList" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="396" Height="38" SelectionChanged="cbHostList_SelectionChanged"/>
+        <Grid Name="UpGrid" HorizontalAlignment="Stretch" Height="auto" Margin="95.328,10,0,0" Grid.Row="0"  VerticalAlignment="Stretch" Width="auto" Grid.Column="1"/>
+        <TextBox x:Name="tbHostName" Height="38" TextWrapping="Wrap" Text="{Binding Path=HostName}" Width="386" Grid.Column="2" FontFamily="Ravie" FontSize="18" Margin="5,0"/>
+        <ComboBox x:Name="cbHostList" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="396" Height="38" SelectionChanged="cbHostList_SelectionChanged" Grid.ColumnSpan="2"/>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="95*"/>
+            <ColumnDefinition Width="99*"/>
         </Grid.ColumnDefinitions>
     </Grid>
 </Window>
